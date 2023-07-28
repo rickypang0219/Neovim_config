@@ -7,7 +7,7 @@ require("toggleterm").setup(
     direction = "horizontal",
     autochdir = true,
     shade_terminals = true, -- NOTE: this option takes priority over highlights specified so if you specify Normal highlights you should set this to false
-    shading_factor = -30, -- the percentage by which to lighten terminal background, default: -30 (gets multiplied by -3 if background is light)
+    -- shading_factor = -30, -- the percentage by which to lighten terminal background, default: -30 (gets multiplied by -3 if background is light)
     start_in_insert = false,
     insert_mappings = true, -- whether or not the open mapping applies in insert mode
     terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
@@ -19,7 +19,7 @@ require("toggleterm").setup(
     auto_scroll = true, -- automatically scroll to the bottom on terminal output
     float_opts = {
     border = "curved", 
-    winblend = 3,
+    -- winblend = 3,
     highlights = { 
       border = "Normal",
       background = "Normal"}
