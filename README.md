@@ -4,6 +4,7 @@ This GutHub repo contains a bunch of lua config files for NeoVim. Neovim is a te
 allows users to modify files easily in termianl. Nowadays, for `Pro` programmers they use Neovim rather than VSCode or other IDEs since NeoVim 
 offers us high customizability. The project root is listed as follow
 
+```
 Project_Root
 ├── init.lua
 ├── lazy-lock.json
@@ -26,7 +27,7 @@ Project_Root
     │   ├── toggle-term.lua
     │   └── treesitter.lua
     └── plugins.lua
-
+```
 
 We install all the extension in plugins.lua and the corresponding config file for each extension is stored insides ```plugin_config``` folder.
 For more detail, you can check out the [video] (https://www.youtube.com/watch?v=J9yqSdvAKXY&t=209s) on Youtube.
