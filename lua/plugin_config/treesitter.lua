@@ -38,10 +38,23 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
-}
-
-require'nvim-treesitter.configs'.setup {
   indent = {
-    enable = true
+    enable = true -- Enable auto-indentation
+  },
+  autotag = {
+    enable = true,
+    enable_rename = true,
+    enable_close = true,
+    enable_close_on_slash = true,
+    filetypes = { 'html', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'svelte', 'vue', 'tsx', 'jsx', 'rescript' } -- Enable auto-tagging
   }
 }
+
+-- require'nvim-treesitter.configs'.setup {
+--   autotag = { 
+--     enable = true 
+--   }, 
+--   indent = {
+--     enable = true
+--   }
+-- }

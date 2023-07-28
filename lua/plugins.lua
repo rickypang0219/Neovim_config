@@ -24,6 +24,7 @@ local plugins = {
     'windwp/nvim-autopairs',
     event = "InsertEnter"
   },
+  "windwp/nvim-ts-autotag",
   {
     'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'
   },
