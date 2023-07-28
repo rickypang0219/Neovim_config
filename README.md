@@ -30,4 +30,4 @@ Project_Root
 ```
 
 We install all the extension in plugins.lua and the corresponding config file for each extension is stored insides ```plugin_config``` folder.
-For more detail, you can check out the [video](https://www.youtube.com/watch?v=J9yqSdvAKXY&t=209s) on Youtube.
+For more detail, you can check out the [video](https://www.youtube.com/watch?v=J9yqSdvAKXY&t) on Youtube.
