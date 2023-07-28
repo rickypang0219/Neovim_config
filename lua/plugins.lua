@@ -28,7 +28,8 @@ local plugins = {
   {
     'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'
   },
-  "terrortylor/nvim-comment",
+  'numToStr/Comment.nvim',
+  'JoosepAlviste/nvim-ts-context-commentstring',
   "lukas-reineke/indent-blankline.nvim",
    {'akinsho/toggleterm.nvim', version = "*", config = true},
   { 'projekt0n/github-nvim-theme' },
