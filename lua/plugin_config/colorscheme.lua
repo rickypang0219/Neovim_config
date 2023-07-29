@@ -7,7 +7,7 @@ require('github-theme').setup({
     hide_nc_statusline = true, -- Override the underline style for non-active statuslines
     transparent = true,       -- Disable setting background
     terminal_colors = true,    -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
-    dim_inactive = false,      -- Non focused panes set to alternative background
+    dim_inactive = true,      -- Non focused panes set to alternative background
     module_default = true,     -- Default enable value for modules
     styles = {                 -- Style to be applied to different syntax groups
       comments = 'NONE',       -- Value is any valid attr-list value `:help attr-list`
@@ -34,7 +34,6 @@ require('github-theme').setup({
       },
     },
     modules = {                -- List of various plugins and additional options
-      -- ...
     },
   },
   palettes = {},
@@ -43,25 +42,34 @@ require('github-theme').setup({
 })
 
 
+
+-- Theme Setting 
 vim.o.termguicolors = true
 vim.cmd('colorscheme github_dark_colorblind')
 --vim.cmd('colorscheme nord')
 
+-- Background Color Setting 
 vim.cmd("highlight Normal guibg=none")
 vim.cmd("highlight SignColumn guibg=none")
 vim.cmd("highlight NormalNC guibg=none")
+
+-- Cursor Line color setting 
 vim.cmd("highlight CursorLineNr guifg=#ffffff guibg=none")
-vim.cmd("highlight CursorLine guibg=none")
-vim.cmd("highlight EndOfBuffer guibg=none")
-vim.cmd("highlight IncSearch guibg=none")
-vim.cmd("highlight Search guibg=none")
-vim.cmd("highlight VertSplit guibg=none")
-vim.cmd("highlight SpecialKey guibg=none")
-vim.cmd("highlight NonText guibg=none")
-vim.cmd("highlight Pmenu guibg=#1c1c1c guifg=#ffffff")
-vim.cmd("highlight PmenuSel guibg=#4d4d4d guifg=#ffffff")
-vim.cmd("highlight PmenuSbar guibg=#1c1c1c")
-vim.cmd("highlight PmenuThumb guibg=#8e8e8e")
-vim.cmd("highlight Whitespace guibg=none")
-vim.opt.winblend = 30
+vim.cmd("highlight CursorLine guibg=#3c3c3c")
+
+
+-- vim.cmd("highlight EndOfBuffer guibg=none")
+-- vim.cmd("highlight IncSearch guibg=none")
+-- vim.cmd("highlight Search guibg=none")
+-- vim.cmd("highlight VertSplit guibg=none")
+-- vim.cmd("highlight SpecialKey guibg=none")
+-- vim.cmd("highlight NonText guibg=none")
+-- vim.cmd("highlight Pmenu guibg=#1c1c1c guifg=#ffffff")
+-- vim.cmd("highlight PmenuSel guibg=#4d4d4d guifg=#ffffff")
+-- vim.cmd("highlight PmenuSbar guibg=#1c1c1c")
+-- vim.cmd("highlight PmenuThumb guibg=#8e8e8e")
+-- vim.cmd("highlight Whitespace guibg=none")
+-- vim.opt.winblend = 30
+
+
 
