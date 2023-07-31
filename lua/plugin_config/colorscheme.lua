@@ -58,6 +58,10 @@ vim.cmd("highlight CursorLineNr guifg=#ffffff guibg=none")
 vim.cmd("highlight CursorLine guibg=#3c3c3c")
 
 
+-- Set Lazy/Mason selection Window transparent
+vim.cmd("highlight NormalFloat guibg=none")
+
+
 -- vim.cmd("highlight EndOfBuffer guibg=none")
 -- vim.cmd("highlight IncSearch guibg=none")
 -- vim.cmd("highlight Search guibg=none")
