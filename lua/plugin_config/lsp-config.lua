@@ -11,6 +11,8 @@ require("lspconfig").tsserver.setup {}
 
 
 
+
+
 -- Get formatter 
 --require("lspconfig").black.setup {}
 
@@ -32,6 +34,6 @@ require("lspconfig").tsserver.setup {}
 --         -- "--all-scopes-completion",
 --         -- "--completion-style=detailed",
 --       }
---     }
+
 --   end
 -- })
