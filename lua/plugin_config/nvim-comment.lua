@@ -21,7 +21,7 @@ require('Comment').setup({
         ---Line-comment keymap
         line = '<A-/>',
         ---Block-comment keymap
-        block = 'gb',
+        block = 'gbc',
     },
     ---LHS of extra mappings
     extra = {
