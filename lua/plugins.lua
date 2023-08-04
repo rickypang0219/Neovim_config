@@ -29,14 +29,14 @@ local plugins = {
     'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'
   },
   'numToStr/Comment.nvim',
-  'JoosepAlviste/nvim-ts-context-commentstring',
+  'JoosepAlviste/nvim-ts-context-commentstring', 
   "lukas-reineke/indent-blankline.nvim",
-   {'akinsho/toggleterm.nvim', version = "*", config = true},
-  { 'projekt0n/github-nvim-theme' },
+   {'akinsho/toggleterm.nvim', version = "*", config = true}, -- ToggleTerm 
+  { 'projekt0n/github-nvim-theme' }, -- GitHub Theme 
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.2',
       dependencies = { 'nvim-lua/plenary.nvim' }
-    },
+    }, -- Fuzzy Finder 
 
   -- Completion 
   'neovim/nvim-lspconfig',
