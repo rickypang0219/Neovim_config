@@ -12,6 +12,17 @@
 vim.api.nvim_set_keymap('v', '>', '>gv', { noremap = true })
 vim.api.nvim_set_keymap('v', '<', '<gv', { noremap = true })
 
--- vim.api.nvim_set_keymap('n', '<', '>>', { noremap = true })
--- vim.api.nvim_set_keymap('n', '<', '<<', { noremap = true })
---
+
+-- Command which commbins closing tabs and saving/quit in bufferline 
+vim.api.nvim_set_keymap('n', '<S-x>', ':w<CR>:bd!<CR>', { noremap = true })
+
+
+
+-- Switch tabs with arrow keys + Command (macOS)
+-- Changes from <M-.> to Tab for moving next Buffer
+
+-- vim.cmd('nnoremap <M-,> :BufferLineCyclePrev<CR>')
+vim.cmd('nnoremap <Tab> :BufferLineCycleNext<CR>')
+-- vim.cmd('inoremap <M-,> <Esc>:BufferLineCyclePrev<CR>')
+vim.cmd('inoremap <Tab> <Esc>:BufferLineCycleNext<CR>')
+
