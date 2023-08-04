@@ -19,10 +19,8 @@ vim.api.nvim_set_keymap('n', '<S-x>', ':w<CR>:bd!<CR>', { noremap = true })
 
 
 -- Switch tabs with arrow keys + Command (macOS)
--- Changes from <M-.> to Tab for moving next Buffer
-
 -- vim.cmd('nnoremap <M-,> :BufferLineCyclePrev<CR>')
-vim.cmd('nnoremap <Tab> :BufferLineCycleNext<CR>')
+vim.cmd('nnoremap <M-.> :BufferLineCycleNext<CR>')
 -- vim.cmd('inoremap <M-,> <Esc>:BufferLineCyclePrev<CR>')
-vim.cmd('inoremap <Tab> <Esc>:BufferLineCycleNext<CR>')
+vim.cmd('inoremap <M-.> <Esc>:BufferLineCycleNext<CR>')
 
