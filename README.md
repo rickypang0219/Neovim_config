@@ -35,7 +35,7 @@ For more detail, you can check out the [video](https://www.youtube.com/watch?v=J
 
 # How to usw it (For Mac and Linux Users)
 
-If you are using either Mac or Linux, you can directly clone the repo inside ```/usr/.config/``` and change the folder name to ```nvim```. Once you cloned it,
+If you are using either Mac or Linux, you can directly clone the repo inside ```~ .config/``` and change the folder name to ```nvim```. Once you cloned it,
 the **Lazy** package manager will install all the extensions automatically and you can instantly use NeoVim.
 
 

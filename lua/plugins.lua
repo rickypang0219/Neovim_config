@@ -36,7 +36,9 @@ local plugins = {
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.2',
       dependencies = { 'nvim-lua/plenary.nvim' }
-    }, -- Fuzzy Finder 
+    }, -- Fuzzy Finder
+  'kkharji/lspsaga.nvim', -- Linter handlers icons
+
 
   -- Completion 
   'neovim/nvim-lspconfig',
@@ -47,7 +49,6 @@ local plugins = {
   "rafamadriz/friendly-snippets",
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
-  "neovim/nvim-lspconfig"
 
 }
 
