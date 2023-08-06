@@ -41,7 +41,11 @@ require("formatter").setup({
 		-- Custome Languages
 		python = { require("formatter.filetypes.python").black },
 		c = { require("formatter.filetypes.c").clangformat },
+		cpp = { require("formatter.filetypes.cpp").clangformat },
 		javascriptreact = { require("formatter.filetypes.javascriptreact").prettier },
+		typescriptreact = { require("formatter.filetypes.typescriptreact").prettier },
+		javascript = { require("formatter.filetypes.javascript").prettier },
+		typescript = { require("formatter.filetypes.typescript").prettier },
 
 		["*"] = {
 			-- "formatter.filetypes.any" defines default configurations for any

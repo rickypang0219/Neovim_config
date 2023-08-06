@@ -39,7 +39,6 @@ local plugins = {
 		tag = "0.1.2",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	}, -- Fuzzy Finder
-	"nvimdev/lspsaga.nvim", -- Linter handlers icons
 	"mhartington/formatter.nvim", -- Formatter
 
 	-- Completion

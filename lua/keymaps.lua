@@ -1,26 +1,21 @@
-
--- In Visual mode use Tab/ Shift + Tab for indent like VScode 
+-- In Visual mode use Tab/ Shift + Tab for indent like VScode
 -- vim.api.nvim_set_keymap('v', '<Tab>', '>gv', { noremap = true })
 -- vim.api.nvim_set_keymap('v', '<S-Tab>', '<gv', { noremap = true })
 
---In Normal mode use Tab/ Shift + Tab for indent like VScode 
+--In Normal mode use Tab/ Shift + Tab for indent like VScode
 -- vim.api.nvim_set_keymap('n', '<Tab>', '>>', { noremap = true })
 -- vim.api.nvim_set_keymap('n', '<S-Tab>', '<<', { noremap = true })
 
+-- Continuously scroll in Nvim Style
+vim.api.nvim_set_keymap("v", ">", ">gv", { noremap = true })
+vim.api.nvim_set_keymap("v", "<", "<gv", { noremap = true })
 
--- Continuously scroll in Nvim Style 
-vim.api.nvim_set_keymap('v', '>', '>gv', { noremap = true })
-vim.api.nvim_set_keymap('v', '<', '<gv', { noremap = true })
-
-
--- Command which commbins closing tabs and saving/quit in bufferline 
-vim.api.nvim_set_keymap('n', '<S-x>', ':w<CR>:bd!<CR>', { noremap = true })
-
-
+-- Command which commbins closing tabs and saving/quit in bufferline
+-- First write the file, next quit the buffer
+vim.api.nvim_set_keymap("n", "<S-x>", ":wa<CR>:bd<CR>", { noremap = true })
 
 -- Switch tabs with arrow keys + Command (macOS)
 -- vim.cmd('nnoremap <M-,> :BufferLineCyclePrev<CR>')
-vim.cmd('nnoremap <M-.> :BufferLineCycleNext<CR>')
+vim.cmd("nnoremap <M-.> :BufferLineCycleNext<CR>")
 -- vim.cmd('inoremap <M-,> <Esc>:BufferLineCyclePrev<CR>')
-vim.cmd('inoremap <M-.> <Esc>:BufferLineCycleNext<CR>')
-
+vim.cmd("inoremap <M-.> <Esc>:BufferLineCycleNext<CR>")
