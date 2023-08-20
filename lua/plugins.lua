@@ -12,34 +12,29 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	"ellisonleao/gruvbox.nvim",
-	"nvim-tree/nvim-tree.lua",
-	"nvim-tree/nvim-web-devicons",
+	{ "nvim-tree/nvim-tree.lua", event = "VeryLazy" },
+	{ "nvim-tree/nvim-web-devicons", event = "VeryLazy" },
 	"nvim-lualine/lualine.nvim",
-	"nvim-treesitter/nvim-treesitter",
-	"shaunsingh/nord.nvim",
-	"rmehri01/onenord.nvim",
-	{
-		"windwp/nvim-autopairs",
-		event = "InsertEnter",
-	},
-	"windwp/nvim-ts-autotag",
+	{ "nvim-treesitter/nvim-treesitter", evnet = "VeryLazy" },
+	{ "windwp/nvim-autopairs", event = "InsertEnter" },
+	{ "windwp/nvim-ts-autotag", event = "InsertEnter" },
 	{
 		"akinsho/bufferline.nvim",
 		version = "*",
 		dependencies = "nvim-tree/nvim-web-devicons",
 	},
-	"numToStr/Comment.nvim",
-	"JoosepAlviste/nvim-ts-context-commentstring",
+	{ "numToStr/Comment.nvim", event = "VeryLazy" },
+	{ "JoosepAlviste/nvim-ts-context-commentstring", event = "VeryLazy" },
 	"lukas-reineke/indent-blankline.nvim",
-	{ "akinsho/toggleterm.nvim", version = "*", config = true }, -- ToggleTerm
+	{ "akinsho/toggleterm.nvim", version = "*", config = true, event = "VeryLazy" }, -- ToggleTerm
 	{ "projekt0n/github-nvim-theme" }, -- GitHub Theme
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.2",
 		dependencies = { "nvim-lua/plenary.nvim" },
+		event = "VeryLazy",
 	}, -- Fuzzy Finder
-	"mhartington/formatter.nvim", -- Formatter
+	{ "mhartington/formatter.nvim" }, -- Formatter
 
 	-- Completion
 	"neovim/nvim-lspconfig",
@@ -50,6 +45,7 @@ local plugins = {
 	"rafamadriz/friendly-snippets",
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
+	"WhoIsSethDaniel/mason-tool-installer.nvim", -- Mason Tools installer
 }
 
 local opt = {}

@@ -10,9 +10,8 @@
 vim.api.nvim_set_keymap("v", ">", ">gv", { noremap = true })
 vim.api.nvim_set_keymap("v", "<", "<gv", { noremap = true })
 
--- Command which commbins closing tabs and saving/quit in bufferline
--- First write the file, next quit the buffer
-vim.api.nvim_set_keymap("n", "<S-x>", ":wa<CR>:bd<CR>", { noremap = true })
+-- Shortcut of closing current buffer (Bufferline)
+vim.api.nvim_set_keymap("n", "<S-x>", ":bd<CR>", { noremap = true })
 
 -- Switch tabs with arrow keys + Command (macOS)
 -- vim.cmd('nnoremap <M-,> :BufferLineCyclePrev<CR>')
